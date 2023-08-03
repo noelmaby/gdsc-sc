@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC-Sollution_Challenge</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/gif" size="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link  href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="text-dark bg-light" style="position: fixed; width: 100%;z-index:1; border-bottom:1px;">
+        <div class="row">
+            <div class="col-md-6 col-9 p-4 pl-5">
+                <h3>GDSC JECC</h2>
+                   
+            </div>
+            <div class="col-md-6 col-3 my-auto ">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link text-dark navbar-font" href="#home">Home </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark navbar-font" href="#problemst">Problem Statement</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark navbar-font" href="#register">Register Now</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark navbar-font" href="#event-schedule">Event schedule</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  
+            </div>
+            
+        </div>
+        
+    </header>
+
+    <section style="padding-top: 150px;" id="home" >
+        <div class="container text-white section-home ">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid img-section1 center" src="images/scpic.png" alt="">
+                    <br>
+                    <h4 class="sectionhome-heading">Mini version of solution Challenge</h4>
+                    <p class="sectionhome-heading2">conducted by <b>GDSC JECC</b></p>
+                    <footer class="sectionhome-heading3">20<sup>th</sup> and 21<sup>st</sup> March,2023</footer>
+                    <a href="#register"><button class="btn-section1">Register Now-></button></a>
+                </div>
+                <div class="clo-md-6 ml-auto p-5">
+                    <img src="images/coding.jpeg" alt="" class="img-thumbnail img-fluid coding-img ">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+        
+    <section class="p-5 text-center">
+        <div class="container ">
+            <h1 style="font-weight: 400;">Why is this Event Super Cool?</h1>
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center p-3" style="border: none;">
+                        <i class="fa-solid fa-person display-1 text-info" ></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Only for GDSC JECC members</h5>
+                          <p class="card-text font-weight-light">This event is exclusively planned for students of Jyothi Engineering College.It will be a great opportunity to showcase your skills out.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                <div class="col-md-4 mt-5">    
+                    <div class="card text-center p-3" style="border: none;">
+                        <i class="fa-solid fa-globe display-1 text-info" ></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Get recommended</h5>
+                          <p class="card-text font-weight-light">The selected team will be recommended to the International Google Solution Challenge as a team representing GDSC JECC, which will give higher points.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center p-3" style="border: none;">
+                        <i class="fa-solid fa-desktop display-1 text-info" ></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Hybrid Model Event</h5>
+                          <p class="card-text font-weight-light">Hackathon is planned as a Hybrid model.The program will be conducted online and Project presentation will be conducted offline.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center" style="padding-top: 85px;" id="problemst">
+        <div class="container">
+            <h1 style="font-weight: 400;">What should you be working on</h1>
+            <p style="font-weight: 100;">Build a solution to a local problem using Google technologies, in accordance with one or mnore of the United Nations 17 sustainable Development Goals.</p>
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card"">
+                        <img class="card-img-top img-thumbnail img-pbl" src="images/goal-01.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">No Poverty</h5>
+                          <p class="card-text font-weight-light">End poverty in all its forms, everywhere. This goal aims to eradicate extreme poverty and reduce overall poverty levels worldwide by 2023.</p>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" ">
+                        <img class="card-img-top img-thumbnail img-pbl" src="images/goal-02.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Zero Hunger</h5>
+                          <p class="card-text font-weight-light">This goal aims to end hunger, achieve food security, improved nutrition among different nations, and promote sustainable agriculture by 2030</p>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" >
+                        <img class="card-img-top img-thumbnail img-pbl" src="images/goal-03.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Good Health and Wellbeing</h5>
+                          <p class="card-text font-weight-light">Ensure healthy lives and promote well-being for all, at all ages. It recognizes the importance of access to quality healthcare, safe and nutritions food, clean water, and sanitation.</p>
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-thumbnail img-pbl" src="images/goal-04.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Quality Education</h5>
+                          <p class="card-text font-weight-light">It ensure inclusive and equitable quality education and promote lifelong learning opportunities for all, recognizes the transformative power of education to break the cycle of poverty.</p>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-thumbnail img-pbl" src="images/goal-05.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Gender Equality</h5>
+                          <p class="card-text font-weight-light">Achieve gender equality and empower all women and girls. It recognizes that gender inequality is a root cause of poverty and social injustice and that empowering women and girls is essential for sustainable development.</p>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-thumbnail img-pbl" src="images/goal-06.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Clean Water and Sanitation</h5>
+                          <p class="card-text font-weight-light">Ensure availability and sustainable management of water and sanitation for all human beings, which is a basic human right and essential for human health and environmental sustainability.</p>
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-section-pbl">Learn More</button>
+
+    </section>
+
+    <section class="text-center p-5" id="register">
+      <div class="container bg-warning p-2">
+        <h1 class="main-heading-sec-register">Register Now</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="heading1-sec-register">Using Devfolio</h1>
+            <p class="heading2-sec-register">Register using your Devfolio Profile</p>
+            <button class="btn-sec-register">Register Now</button>
+          </div>
+          <div class="col-md-6">
+            <h1 class="heading1-sec-register">Be a GDSC JECC Member</h1>
+            <p class="heading2-sec-register">Become a member before you register for the event</p>
+            <button class="btn-sec-register">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center p-5" id="event-schedule">
+      <div class="conatiner">
+        <h1 class="main-heading-sec-register">Event Schedule</h1>
+        <div class="row">
+          
+            <ul class="nav nav-tabs" id="myTab" role="tablist" >
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Online Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="pointer-events:none">Offline Events</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row p-5 text-center">
+                  
+                  <div class="col-md-6">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-flag fa-flip-horizontal"></i>&thinsp;16<sup>th</sup>March 2023</h5>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-muted">ONLINE REGISTRATION STARTS</h6>
+                        <p class="card-text">Hackathon will be inaugrated by Dr Jose P Therattil, Principal of Jyothi Engineering College, Thrisur.GDSC Campus Lead Sandra M will be giving out more info about the program.</p>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                  
+
+                  <div class="col-md-6">
+                    <div class="card"  >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-clock"></i>&thinsp;09:30am</h5>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-muted">ONLINE SESSION OF HACKATHON STARTS</h6>
+                        <p class="card-text">Inaugral Ceremony will be hosted through a google meet.Participants can join through the meet, and start to work on their project.They should be active within intervals to mark the attendance</p>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                
+                </div>
+                
+    
+              </div>
+              
+              
+             
+            </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+             <p><i class="fa-solid fa-circle-user"></i>&thinsp;created by <a style="text-decoration: none;" href="https://www.instagram.com/noel_manjayil/" >Noel M Aby </a>|| No rights reserved</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/223b40a519.js" crossorigin="anonymous"></script>
+</body>
+</html>
